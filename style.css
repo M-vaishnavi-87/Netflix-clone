@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    ;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(images/back-img.jpg);
+    height: 90vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: none;
+    background-size: max(1000px, 100vw);
+    position: relative;
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    opacity: 0.65;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    height: 62px;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    color: rgb(188, 23, 31);
+    fill: rgb(188, 23, 31);
+    width: 143px;
+    padding-top: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 23px;
+    position: relative;
+    padding: 0px 29px;
+    text-align: center;
+}
+
+.hero .first {
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero .sec {
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    ;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.third {
+    font-size: 16;
+    font-weight: 400;
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    color: white;
+
+}
+
+.seperation {
+    position: relative;
+    height: 5px;
+    border-top-left-radius: 90% 50px;
+    border-top-right-radius: 100% 50px;
+    background: rgb(177, 39, 62)
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: rgba(248, 243, 243, 0.78);
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+.sign {
+    display: flex;
+    gap: 3px;
+    height: 40px;
+    flex-direction: row;
+}
+
+.eng-btn {
+    background-color: transparent;
+    border: 1px solid rgba(250, 249, 249, 0.3);
+    padding: 0px 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.red-sm {
+    background-color: rgb(229, 9, 20);
+    padding: 4px 20px;
+    border-radius: 6px;
+    color: white;
+
+
+}
+
+.red-btn {
+    color: white;
+    font-size: 20px;
+    padding: 10px 45px 11px 8px;
+    border-radius: 4px;
+    background: rgb(229, 9, 20);
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+}
+
+.input-text {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 14px 95px 14px 10px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(250, 249, 249, 0.3);
+
+}
+
+.movies {
+    height: 400px;
+    width: 90vw;
+    padding-left: 50px;
+    position: relative;
+}
+
+.movies h5 {
+    position: relative;
+    color: white;
+    padding: 40px 170px;
+    font-size: 25px;
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+.cards {
+    padding: 0px 160px 0px 160px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    scrollbar-width: none;
+}
+
+.card {
+    transition: all 0.4s ease-in-out;
+    flex: 0 0 auto;
+    background: rgb(35, 35, 35);
+    height: 250px;
+    width: 210px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+
+}
+
+.card-1 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYgqP-FM9E4u1IbMtOKfqd2ha2nti95bI-jg9xOXxJAcO6Xj9hwy02O4dFu0-oZ_jSi-NQFHPZQwn1NO7eA5LVqqGZIfy9YPjg1G6GzZPMRODawEZXb_7Ks9Ryjl-xUANYCs.webp?r=d90);
+}
+
+.card-2 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABVCzd41nKAatdvwy0DT1M5D-xSzSdBdKklegmczhdyKYvEEwunaUUcE5xr7Zjkn9Ywhm3n-2g0wi5s1nB3J1bAhe8t3j0ENBjxw.webp?r=267);
+}
+
+.card-3 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABemK-aHwX63DztqbWwQ0xnYGvHYuoYkQ3l3ZIwftPjmuJxC461m-FOI7ZN_bzolsgGd_3_dbacKgr5mV292UjjEYJGCgIubIQOs.webp?r=273);
+}
+
+.card-4 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZt4Jeqd3gtgl6oL264szRYDg3TyvgHKdg1QMJoG5bavMe5OVd4H_77fIRqSTgalVO2eaK8LxJD_e3GFQpgM4Ln0yzbKzSSu46s.webp?r=db7);
+}
+
+.card-5 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWJF3fOVc0WbJWEYriu_3uQ9lgkyfv0VrBguejqSrYC0b7AfDDsPJ0IFUMseCvvtqjbKvUegYyhw0rDMS_O44wupyfnLPemAXvHP8sBGapu-n4-8y-D6rdQclPui4gvqvwiE.webp?r=466);
+}
+
+.card-6 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWrTjWMrsToh9vAoz8rKrhSSHdJW6bmhL8Lvv63zCy1lo3O1TFqvZH4U80xS1vDJJV00sc97Ntd2b1Y1vh3v4SIs60pAtWC6pottJ80j5h4ITJPEURiTJEH4O_a47L1S0qlG.webp?r=f17);
+}
+
+.card-7 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWUsrobyjfthn3cn_9LIwE_08qG_rgI5BTJaI7ecvgxEMp1e2Zu7hPQ9HGeNgVVWrgu2Wj-vfUphdz8RniXmEvla02KBce2uV_kB0vtctN0CX4QBQDr4oQpGGQd59uuKk87Z.webp?r=b86);
+}
+
+.card-8 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQyNT9Mdd2wR9KVzh2iO_T3rTEydvDSlf0_4EnLYou_zEgzr5juLda9NmQT2srWqiFh-7PKVRzRgoB5Eg-xA5DQHFPeSd1MHDzryhJqxIeayTICsi6DMPp4I8uH8NdtaV5Ji.webp?r=e05);
+}
+
+.card-9 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZxdHsYg10iHLQm7e8pxLnbn1eGa3nJwHH_AVi2qgNL6hYH9xMi2ESvKx-zy40e9woWRPcPuwFNR6iD2bMQC7TbcfsDWVccDtMk.webp?r=213);
+}
+
+.card-10 {
+    background-image: url(https://occ-0-3215-3663.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABU73BvQjJgydQFEJ-vZZw9QtO8fL6lIxc71x9tOqxgDWh_BHokCWPIbGC5AxJjDk0D_sIH5KhmmYm9HLr3DKUXg8eo6nzF0rtSI.webp?r=d95);
+}
+
+.joins {
+    padding: 1px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+    padding-bottom: 60px;
+}
+
+.enjoy {
+    color: white;
+    font-size: 22px;
+    padding: 107px 70px 10px 108px;
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+.join {
+    height: 250px;
+    width: 291px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: white;
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.join .big {
+    padding: 20px 1px 1px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.join .small {
+    padding: 15px 1px 1px 20px;
+}
+
+@media screen and (max-width:1300px) {
+
+    .join {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+}
+
+.faq {
+    position: relative;
+    background-color: black;
+    font-family: "noto sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    width: 80vw;
+    margin: 400px 85px 50px;
+    height: 660px;
+
+}
+
+.plus {
+    padding-right: 10px;
+}
+
+.faq h2 {
+    font-size: 24px;
+    font-weight: 200px;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.ques span {
+    padding-left: 21px;
+}
+
+.ques:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.ques {
+    transition: all 1s ease-out;
+    height: 67px;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px 35px;
+
+}
+
+.query {
+    color: white;
+    padding-left: 50px;
+}
+
+footer {
+    max-width: 90vw;
+    margin: auto;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 50px 70px 100px 60px;
+
+}
+
+@media screen and (max-width:1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+    }
+
+
+    .foot-span {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+    .movies{
+        height: 670px;
+    }
+    .joins{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 20px;;
+    }
+}
+
+@media screen and (max-width:900px){
+    .joins{
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+    .join{
+        width: 600px;
+        padding: auto;
+    }
+    .movies{
+        height: 1000px;
+    }
+    .faq{
+        margin: 650px 85px 50px;
+    }
+    .movies {
+    height: 400px;
+    width: 95vw;
+    padding-left: 1px;
+    padding-top: 15px;
+  
+}
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-span {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+
+.foot-email {
+    padding-left: 190px;
+
+}
